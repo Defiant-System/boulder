@@ -15,6 +15,49 @@ content {
 		height: 720px;
 	}
 
+	.diamond {
+		background: url(~/img/shine.webp) 0 0 no-repeat;
+		position: absolute;
+		top: 298px;
+		left: 453px;
+		width: 82px;
+		height: 82px;
+		scale: .4;
+
+		&:before {
+			content: "";
+			background: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: inherit;
+			height: inherit;
+			mix-blend-mode: plus-lighter;
+			animation: shine-red 4000ms steps(8) alternate-reverse infinite;
+		}
+
+		&.red { background-position: 0 0px; }
+		&.red:before  { animation-name: shine-red; }
+
+		&.white { background-position: 0 -82px; }
+		&.white:before { animation-name: shine-white; }
+
+		&.green { background-position: 0 -164px; }
+		&.green:before { animation-name: shine-green; }
+
+		&.yellow { background-position: 0 -246px; }
+		&.yellow:before { animation-name: shine-yellow; }
+
+		&.purple { background-position: 0 -328px; }
+		&.purple:before { animation-name: shine-purple; }
+
+		&.orange { background-position: 0 -410px; }
+		&.orange:before { animation-name: shine-orange; }
+
+		&.blue { background-position: 0 -492px; }
+		&.blue:before { animation-name: shine-blue; }
+	}
+
 	.crystal-ball {
 		background: url(~/img/crystalball.webp) 0 0 no-repeat;
 		position: absolute;
@@ -34,7 +77,7 @@ content {
 			left: 0;
 			width: 190px;
 			height: 190px;
-			animation: overlay 3000ms steps(40) infinite;
+			animation: crystal-overlay 3000ms steps(40) infinite;
 			mix-blend-mode: multiply;
 			opacity: .5;
 			filter: blur(5px);
@@ -43,12 +86,62 @@ content {
 }
 
 
+@keyframes shine-red {
+	0%   { background-position: -82px 0px; opacity: .75; }
+	10%  { background-position: -738px 0px; opacity: .75; }
+	25%  { background-position: -738px 0px; opacity: 0; }
+	100% { background-position: -738px 0px; opacity: 0; }
+}
+
+@keyframes shine-white {
+	0%   { background-position: -82px -82px; opacity: .75; }
+	10%  { background-position: -738px -82px; opacity: .75; }
+	25%  { background-position: -738px -82px; opacity: 0; }
+	100% { background-position: -738px -82px; opacity: 0; }
+}
+
+@keyframes shine-green {
+	0%   { background-position: -82px -164px; opacity: .75; }
+	10%  { background-position: -738px -164px; opacity: .75; }
+	25%  { background-position: -738px -164px; opacity: 0; }
+	100% { background-position: -738px -164px; opacity: 0; }
+}
+
+@keyframes shine-yellow {
+	0%   { background-position: -82px -246px; opacity: .75; }
+	10%  { background-position: -738px -246px; opacity: .75; }
+	25%  { background-position: -738px -246px; opacity: 0; }
+	100% { background-position: -738px -246px; opacity: 0; }
+}
+
+@keyframes shine-purple {
+	0%   { background-position: -82px -328px; opacity: .75; }
+	10%  { background-position: -738px -328px; opacity: .75; }
+	25%  { background-position: -738px -328px; opacity: 0; }
+	100% { background-position: -738px -328px; opacity: 0; }
+}
+
+@keyframes shine-orange {
+	0%   { background-position: -82px -410px; opacity: .75; }
+	10%  { background-position: -738px -410px; opacity: .75; }
+	25%  { background-position: -738px -410px; opacity: 0; }
+	100% { background-position: -738px -410px; opacity: 0; }
+}
+
+@keyframes shine-blue {
+	0%   { background-position: -82px -492px; opacity: .75; }
+	10%  { background-position: -738px -492px; opacity: .75; }
+	25%  { background-position: -738px -492px; opacity: 0; }
+	100% { background-position: -738px -492px; opacity: 0; }
+}
+
+
 @keyframes crystal {
 	0%    { background-position: 0 0; }
 	100%  { background-position: 0 -7600px; }
 }
 
-@keyframes overlay {
+@keyframes crystal-overlay {
 	0%    { background-position: 0 0; }
 	100%  { background-position: 0 -7600px; }
 }
