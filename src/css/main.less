@@ -1,4 +1,6 @@
 
+background: transparent;
+
 content {
 	position: absolute;
 	top: 0;
@@ -74,25 +76,25 @@ content {
 			animation: shine-red 4000ms steps(8) alternate-reverse infinite;
 		}
 
-		&.red { background-position: 0 0px; }
+		&.red { background-position: 0 0px; filter: drop-shadow(0 0 17px #f33a); }
 		&.red:before  { animation-name: shine-red; }
 
-		&.white { background-position: 0 -82px; }
+		&.white { background-position: 0 -82px; filter: drop-shadow(0 0 17px #fffa); }
 		&.white:before { animation-name: shine-white; }
 
-		&.green { background-position: 0 -164px; }
+		&.green { background-position: 0 -164px; filter: drop-shadow(0 0 17px #3f3a); }
 		&.green:before { animation-name: shine-green; }
 
-		&.yellow { background-position: 0 -246px; }
+		&.yellow { background-position: 0 -246px; filter: drop-shadow(0 0 17px #ff0a); }
 		&.yellow:before { animation-name: shine-yellow; }
 
-		&.purple { background-position: 0 -328px; }
+		&.purple { background-position: 0 -328px; filter: drop-shadow(0 0 17px #f0fa); }
 		&.purple:before { animation-name: shine-purple; }
 
-		&.orange { background-position: 0 -410px; }
+		&.orange { background-position: 0 -410px; filter: drop-shadow(0 0 17px #f90a); }
 		&.orange:before { animation-name: shine-orange; }
 
-		&.blue { background-position: 0 -492px; }
+		&.blue { background-position: 0 -492px; filter: drop-shadow(0 0 17px #09fa); }
 		&.blue:before { animation-name: shine-blue; }
 	}
 
