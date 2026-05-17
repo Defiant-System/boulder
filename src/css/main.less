@@ -13,6 +13,44 @@ content {
 		left: 0;
 		width: 1080px;
 		height: 720px;
+
+		.buttons {
+			position: absolute;
+			top: 610px;
+			left: 0;
+			right: 0;
+			scale: .7;
+			text-align: center;
+
+			.button {
+				background: url(~/img/sprites.webp) no-repeat;
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				cursor: pointer;
+				
+				&.start {
+					background-position: 0 0;
+					width: 386px;
+					height: 94px;
+					margin: 0 29px;
+				}
+				
+				&.options {
+					background-position: 0 -94px;
+					// top: 9px;
+					width: 275px;
+					height: 67px;
+				}
+				
+				&.high-scores {
+					background-position: 0 -162px;
+					// top: 9px;
+					width: 276px;
+					height: 68px;
+				}
+			}
+		}
 	}
 
 	.diamond {
