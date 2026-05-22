@@ -8,7 +8,16 @@ content {
 	right: 0;
 	bottom: 0;
 
+	&[data-show="start"] {
+		.start-view { display: block; }
+	}
+
+	&[data-show="game"] {
+		.game-view { display: block; }
+	}
+
 	.start-view {
+		display: none;
 		background: url(~/img/start.webp) 50% 50% no-repeat;
 		position: absolute;
 		top: 0;
@@ -52,6 +61,21 @@ content {
 					height: 68px;
 				}
 			}
+		}
+	}
+
+	.game-view {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1080px;
+		height: 720px;
+
+		canvas {
+			background: #000;
+			width: inherit;
+			height: inherit;
 		}
 	}
 

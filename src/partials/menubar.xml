@@ -4,6 +4,14 @@
 		<Menu type="divider"/>
 		<Menu name="Quit Boulder Dash" shell="win -c"/>
 	</Menu>
+	<Menu name="Game" for="game-view">
+		<Menu name="Show&#8230;">
+			<Menu name="Start" click="show-view" arg="start"/>
+			<Menu name="Game" click="show-view" arg="game"/>
+			<Menu type="divider"/>
+			<Menu name="Editor" click="show-view" arg="editor"/>
+		</Menu>
+	</Menu>
 	<Menu name="Help">
 		<Menu name="Help" click="open-help"/>
 		<Menu type="divider"/>
