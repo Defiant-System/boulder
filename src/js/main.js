@@ -1,4 +1,6 @@
 
+@import "./levels/01.js"
+
 @import "./classes/arena.js"
 @import "./classes/map.js"
 @import "./classes/viewport.js"
