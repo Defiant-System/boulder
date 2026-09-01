@@ -77,6 +77,7 @@ const boulder = {
 	},
 	start: @import "./areas/start.js",
 	game: @import "./areas/game.js",
+	editor: @import "./areas/editor.js",
 };
 
 window.exports = boulder;
