@@ -68,6 +68,8 @@ const boulder = {
 				Self.active = name;
 				break;
 			// proxy event
+			case "set-scale":
+				return Self.editor.dispatch(event);
 			default:
 				el = event.el;
 				if (!el && event.origin) el = event.origin.el;
