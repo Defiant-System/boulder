@@ -21,11 +21,15 @@
 			case "show-view":
 				// pan viewport events
 				Self.els.el.on("mousedown", Self.doPan);
+				if (event.arg) Self.dispatch({ type: "render-level", arg: +event.arg[0] });
 				break;
 			case "hide-view":
 				break;
+			case "set-scale":
+				Self.els.el.parent().css({ "--scale": event.arg });
+				break;
 			case "render-level":
-				let lvl = level[event.arg],
+				let lvl = level[event.arg-1],
 					str = [];
 				for (let y=0; y<lvl.height; y++) {
 					for (let x=0; x<lvl.width; x++) {

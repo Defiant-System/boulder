@@ -35,12 +35,18 @@ const boulder = {
 	},
 	dispatch(event) {
 		let Self = boulder,
-			name,
+			name, arg,
 			el;
 		// console.log(event);
 		switch (event.type) {
 			// system events
 			case "window.init":
+				break;
+			case "window.focus":
+				Self.els.content.data({ state: "" });
+				break;
+			case "window.blur":
+				Self.els.content.data({ state: "paused" });
 				break;
 			// custom events
 			case "open-help":
@@ -53,12 +59,13 @@ const boulder = {
 				name = Self.els.content.data("show");
 				if (name) Self[name].dispatch({ type: "hide-view" });
 
-				name = event.arg || event.el.data("arg");
-				if (name) Self[name].dispatch({ type: "show-view" });
+				arg = (event.arg || event.el.data("arg")).split(",");
+				name = arg.shift();
+				if (name) Self[name].dispatch({ type: "show-view", arg });
 				Self.els.content.data({ show: name });
 
 				// save reference to active view
-				Self.active = event.arg;
+				Self.active = name;
 				break;
 			// proxy event
 			default:
