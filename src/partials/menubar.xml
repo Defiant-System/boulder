@@ -10,8 +10,9 @@
 			<Menu name="Game" click="show-view" arg="game"/>
 			<Menu type="divider"/>
 			<Menu name="Editor Scale&#8230;">
-				<Menu name="1" check-group="editor-scale" click="set-scale" arg="1" is-checked="1"/>
-				<Menu name=".5" check-group="editor-scale" click="set-scale" arg=".5"/>
+				<Menu name="1" check-group="editor-scale" click="set-scale" arg="1"/>
+				<Menu name=".75" check-group="editor-scale" click="set-scale" arg=".75"/>
+				<Menu name=".5" check-group="editor-scale" click="set-scale" arg=".5" is-checked="1"/>
 				<Menu name=".25" check-group="editor-scale" click="set-scale" arg=".25"/>
 				<Menu name=".175" check-group="editor-scale" click="set-scale" arg=".175"/>
 			</Menu>

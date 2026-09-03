@@ -29,7 +29,7 @@
 				Self.els.el.parent().css({ "--scale": event.arg });
 				break;
 			case "render-level":
-				let lvl = level[event.arg-1],
+				let lvl = Level[event.arg-1],
 					str = [];
 				for (let y=0; y<lvl.height; y++) {
 					for (let x=0; x<lvl.width; x++) {

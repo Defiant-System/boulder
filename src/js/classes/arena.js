@@ -3,12 +3,16 @@ class Arena {
 	constructor(cvs) {
 		// set dimensions of canvas
 		let { width, height } = cvs.offset();
-		width = width || +cvs.attr("width");
-		height = height || +cvs.attr("height");
+		width = width || +cvs.attr("width") || 720;
+		height = height || +cvs.attr("height") || 720;
 		this.width = width;
 		this.height = height;
 		this.cvs = cvs.attr({ width, height });
 		this.ctx = cvs[0].getContext("2d", { willReadFrequently: true });
+
+		this.config = {
+			size: 150, // tile size
+		};
 
 		// create FPS controller
 		let Self = this;
@@ -22,7 +26,8 @@ class Arena {
 
 		// assets list
 		let assets = [
-				{ id: "shine",  width: 820, height: 574, src: "~/img/shine.webp" },
+				{ id: "tiles", width: 1350, height: 1024, src: "~/img/tiles.webp" },
+				{ id: "shine", width: 820, height: 574, src: "~/img/shine.webp" },
 			],
 			loadAssets = () => {
 				let item = assets.pop(),
@@ -62,6 +67,8 @@ class Arena {
 		// center viewport + render map, etc
 		this.viewport.center();
 		this.map.render(this.ctx);
+		// for debug info
+		this.drawFps(this.ctx);
 	}
 
 	drawFps(ctx) {

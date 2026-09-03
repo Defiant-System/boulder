@@ -6,6 +6,7 @@
 @import "./classes/viewport.js"
 @import "./classes/player.js"
 @import "./classes/stone.js"
+@import "./classes/tile.js"
 @import "./classes/gem.js"
 
 @import "./modules/test.js"

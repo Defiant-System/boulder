@@ -21,10 +21,8 @@
 		switch (event.type) {
 			// custom events
 			case "show-view":
-				// Self.arena.fpsControl.start();
-
-				console.log(level[0]);
-
+				Self.arena.fpsControl.start();
+				// console.log(level[0]);
 				break;
 			case "hide-view":
 				Self.arena.fpsControl.stop();

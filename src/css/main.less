@@ -45,8 +45,8 @@ content {
 
 	.c64-logo {
 		position: absolute;
-		top: 29px;
-		right: 29px;
+		top: 19px;
+		right: 19px;
 		width: 317px;
 		height: 91px;
 		display: inline-block;
@@ -163,10 +163,25 @@ content {
 		width: 1080px;
 		height: 720px;
 
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2;
+			background: radial-gradient(circle at 50% 50%, #0000, #000b 49%, #000 59%);
+			pointer-events: none;
+		}
+
 		canvas {
-			background: #000;
-			width: inherit;
-			height: inherit;
+			background: #fff1;
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			width: 720px;
+			height: 720px;
 		}
 	}
 
@@ -182,18 +197,6 @@ content {
 		--scale: .5;
 		--tW: calc( 150px * var( --scale ) );
 		--tH: calc( 150px * var( --scale ) );
-
-		&:before1 {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			z-index: 2;
-			background: radial-gradient(circle at 50% 50%, #0000, #000b 65%, #000 85%);
-			pointer-events: none;
-		}
 
 		.level {
 			position: relative;

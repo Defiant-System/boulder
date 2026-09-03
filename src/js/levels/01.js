@@ -1,7 +1,7 @@
 
-const level = [];
+const Level = [];
 
-level.push({
+Level.push({
     "index": 0,
     "name": "Intro",
     "description": "Pick up jewels and exit before time is up",
@@ -43,7 +43,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 1,
     "name": "Rooms",
     "description": "Pick up jewels, but you must move boulders to get all jewels",
@@ -85,7 +85,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 2,
     "name": "Maze",
     "description": "Pick up jewels. You must get every jewel to exit",
@@ -127,7 +127,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 3,
     "name": "Butterflies",
     "description": "Drop boulders on butterflies to create jewels",
@@ -169,7 +169,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 4,
     "name": "Guards",
     "description": "The jewels are there for grabbing, but they are guarded by the deadly fireflies",
@@ -211,7 +211,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 5,
     "name": "Firefly dens",
     "description": "Each firefly is guarding a jewel",
@@ -253,7 +253,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 6,
     "name": "Amoeba",
     "description": "Surround the amoeba with boulders. Pick up jewels when it suffocates",
@@ -295,7 +295,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 7,
     "name": "Enchanted wall",
     "description": "Activate the enchanted wall and create as many jewels as you can",
@@ -337,7 +337,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 8,
     "name": "Greed",
     "description": "You have to get a lot of jewels here, lucky there are so many",
@@ -379,7 +379,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 9,
     "name": "Tracks",
     "description": "Get the jewels, avoid the fireflies",
@@ -421,7 +421,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 10,
     "name": "Crowd",
     "description": "You must move a lot of boulders around in some tight spaces",
@@ -463,7 +463,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 11,
     "name": "Walls",
     "description": "Drop a boulder on a firefly at the right time to blast through walls",
@@ -505,7 +505,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 12,
     "name": "Apocalypse",
     "description": "Bring the butterflies and amoeba together and watch the jewels fly",
@@ -547,7 +547,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 13,
     "name": "Zigzag",
     "description": "Magically transform the butterflies into jewels, but don't waste any boulders",
@@ -589,7 +589,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 14,
     "name": "Funnel",
     "description": "There is an enchanted wall at the bottom of the rock tunnel",
@@ -631,7 +631,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 15,
     "name": "Enchanted boxes",
     "description": "The top of each room is an enchanted wall, but you'll have to blast your way inside",
@@ -673,7 +673,7 @@ level.push({
             "4444444444444444444444444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 16,
     "name": "Interval 1",
     "description": "Interval 1",
@@ -705,7 +705,7 @@ level.push({
             "44444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 17,
     "name": "Interval 2",
     "description": "Interval 2",
@@ -737,7 +737,7 @@ level.push({
             "44444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 18,
     "name": "Interval 3",
     "description": "Interval 3",
@@ -769,7 +769,7 @@ level.push({
             "44444444444444444444"
 });
 
-level.push({
+Level.push({
     "index": 19,
     "name": "Interval 4",
     "description": "Interval 4",
