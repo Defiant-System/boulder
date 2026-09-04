@@ -69,6 +69,7 @@ const boulder = {
 				Self.active = name;
 				break;
 			// proxy event
+			case "toggle-shadow":
 			case "set-scale":
 				return Self.editor.dispatch(event);
 			default:

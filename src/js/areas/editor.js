@@ -25,6 +25,10 @@
 				break;
 			case "hide-view":
 				break;
+			case "toggle-shadow":
+				el = Self.els.el.parent();
+				el.toggleClass("show-shadow");
+				break;
 			case "set-scale":
 				Self.els.el.parent().css({ "--scale": event.arg });
 				break;
